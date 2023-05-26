@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:paddingHorizontal="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/app_basic_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="24sp">
+
+            <ImageView
+                android:id="@+id/launch_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/app_logo"
+                android:src="@drawable/app_logo" />
+
+            <TextView
+                android:id="@+id/movies_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/launch_screen"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24sp"
+                android:text="@string/application_name"
+                android:textAppearance="@style/movie_times"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/registration_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_basic_details"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="56sp">
+
+            <LinearLayout
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="24sp"
+                android:background="@drawable/registration_no_selector"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/countryCode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.13"
+                    android:padding="10sp"
+                    android:text="@string/countryCode"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.005"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/cellNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.865"
+                    android:background="@null"
+                    android:hint="@string/cellNumber"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/proceedBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobileNumber"
+                android:background="@drawable/button_borders"
+                android:text="@string/proceed"
+                android:textAllCaps="false"
+                android:textColor="#020046"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/last_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registration_block"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="24sp">
+
+            <TextView
+                android:id="@+id/otherT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/otherLogin"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/googleSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/otherT"
+                android:background="@drawable/button_borders"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/googleSignImage"
+                    android:layout_width="0dp"
+                    android:layout_height="40sp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="0.20"
+                    android:src="@drawable/google_logo" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.70"
+                    android:padding="13dp"
+                    android:text="@string/googleSignIn"
+                    android:textAlignment="inherit"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="#4285F4" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

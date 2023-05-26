@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_profile_main_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/user_profile_card_relative_layout">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/cardview"
+                    app:cardCornerRadius="2dp"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:layout_centerHorizontal="true"
+                            android:id="@+id/user_profile_user_image"
+                            app:riv_corner_radius="10dp"
+                            app:riv_border_width="1dp"
+                            app:riv_border_color="@android:color/darker_gray"
+                            android:elevation="7dp" />
+
+                        <TextView
+                            android:id="@+id/user_profile_user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="User Name"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_profile_user_email"
+                            android:text="User Email"
+                            android:layout_below="@id/user_profile_user_name"
+                            android:layout_centerHorizontal="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+                    </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/cardview">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="46dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="16dp">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/user_profile_user_mobile_layout">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_profile_user_mobile"
+                                android:hint="Mobile Number"
+                                android:enabled="false"
+                                android:maxLength="10"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_mobile_layout"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/user_profile_user_date_layout">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_profile_user_date"
+                                android:hint="Date of Birth"
+                                android:enabled="false"
+                                android:inputType="date"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_date_layout"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/user_profile_user_address_layout">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_profile_user_address"
+                                android:hint="Address"
+                                android:enabled="false"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_address_layout"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/user_profile_user_city_layout">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_profile_user_city"
+                                android:hint="City"
+                                android:enabled="false"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_city_layout"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/user_profile_user_state_layout">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/user_profile_user_state"
+                                android:hint="State"
+                                android:enabled="false"/>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/user_profile_user_state_layout"
+                            android:layout_marginTop="50dp"
+                            android:id="@+id/user_profile_btn_save_details"
+                            android:text="Save Changes"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                            android:textColor="@android:color/white"
+                            android:background="@drawable/btn_dark_background"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </ScrollView>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            android:src="@drawable/ic_edit"
+            android:id="@+id/user_profile_fab_edit"
+            android:tint="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"/>
+
+    </RelativeLayout>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerInParent="true"
+        app:mk_color="@color/colorPrimaryDark"
+        app:mk_type="TwinFishesSpinner"
+        android:id="@+id/loader"
+        android:visibility="gone"/>
+
+</RelativeLayout>

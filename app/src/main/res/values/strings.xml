@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FigmaSamples</string>
+
+    <string name="application_name">Movie Times</string>
+    <string name="app_logo">MovieTimes Logo</string>
+    <string name="countryCode">+91</string>
+    <string name="cellNumber">Mobile Number</string>
+    <string name="proceed">Proceed</string>
+    <string name="otherLogin">Try some Other Login Methods</string>
+    <string name="googleSignIn">Sign In With Google</string>
+
+    <string name="otpVerification">OTP Verification</string>
+    <string name="closeDialog">Close Dialog</string>
+    <string name="timer">00:59</string>
+    <string name="resendOtp">Resend OTP</string>
+    <string name="verifyOtp">Verify OTP</string>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/manu_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"
+            android:icon="@drawable/ic_menu_home" />
+
+        <item
+            android:id="@+id/menu_gallery"
+            android:title="Gallery"
+            android:icon="@drawable/ic_menu_gallery" />
+
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_menu_user" />
+
+        <item
+            android:id="@+id/menu_company"
+            android:title="Company"
+            android:icon="@drawable/ic_company" />
+        <item
+            android:id="@+id/menu_applied_company"
+            android:title="Applied to Company"
+            android:icon="@drawable/ic_clipboard_with_pencil_" />
+
+        <item
+            android:id="@+id/menu_upcoming_Events"
+            android:title="Upcoming Event"
+            android:icon="@drawable/ic_menu_upcomingevent" />
+
+    </group>
+
+</menu>

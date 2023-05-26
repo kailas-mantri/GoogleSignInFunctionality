@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/admin_menu_add_organizations_clear"
+        android:title="Clear Page"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_delete"/>
+
+    <item
+        android:id="@+id/admin_menu_add_organizations_save"
+        android:title="Save Organization"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_save"/>
+
+</menu>

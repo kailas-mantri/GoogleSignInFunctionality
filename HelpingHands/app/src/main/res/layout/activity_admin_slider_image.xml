@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Admin.AdminSliderImageActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Slider Image"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Title"
+        android:background="@color/background_blue"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/admin_slider_images_upload"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_slider_images_upload"
+        android:id="@+id/admin_slider_images_title"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=" slider Title"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_slider_images_title"
+        android:id="@+id/admin_slider_images_id"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=" Slider id"
+            android:textAlignment="textStart"
+            android:gravity="start"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_slider_image_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/admin_slider_images_id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint=" Description"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textAlignment="textStart"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/admin_slider_image_upload_button"
+        android:layout_centerHorizontal="true"
+        android:text="Upload"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/white_button"
+        android:layout_alignParentBottom="true"
+        android:onClick="admin_slider_image_upload"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
+
+</RelativeLayout>

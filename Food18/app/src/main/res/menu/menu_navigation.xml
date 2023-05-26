@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group_name">
+
+        <item android:title="@string/title_home"
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home_black_24dp"/>
+
+        <item android:title="@string/my_orders"
+            android:id="@+id/menu_my_order"
+            android:icon="@drawable/ic_my_orders"/>
+
+        <item android:title="@string/coupons"
+            android:id="@+id/menu_coupons"
+            android:icon="@drawable/ic_coupons"/>
+
+        <item android:title="@string/title_profile"
+            android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_person"/>
+
+        <item android:title="@string/title_notification"
+            android:id="@+id/menu_notifications"
+            android:icon="@drawable/ic_notifications"/>
+
+        <item android:title="@string/title_setting"
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings"/>
+
+        <item android:title="@string/contact"
+            android:id="@+id/menu_contact"
+            android:icon="@drawable/ic_contact"/>
+
+        <item android:title="@string/support"
+            android:id="@+id/menu_support"
+            android:icon="@drawable/ic_support"/>
+    </group>
+
+    <item android:title="@string/sign_out"
+        android:id="@+id/mwnu_signout"
+        android:icon="@drawable/ic_signout"/>
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "862461467627",
+    "firebase_url": "https://scrima-authentication.firebaseio.com",
+    "project_id": "scrima-authentication",
+    "storage_bucket": "scrima-authentication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862461467627:android:73ce1edf2cc79f747517ae",
+        "android_client_info": {
+          "package_name": "com.scrimatec.scrimaauthenticate_googledata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862461467627-891bmk9q3j0finf4m2kiq9790pqcb72c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scrimatec.scrimaauthenticate_googledata",
+            "certificate_hash": "62fe4d9519be8b88fb466df048e04daf563d3101"
+          }
+        },
+        {
+          "client_id": "862461467627-thpeeeagj3av49c562i7us9bjci23tuj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX1pvFcyP44EayoFry5KtmFnxayHEwANc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862461467627-thpeeeagj3av49c562i7us9bjci23tuj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

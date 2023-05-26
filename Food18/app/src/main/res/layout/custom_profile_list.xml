@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyName"
+            android:text="Name"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kailas Mantri"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textValueName"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyEmail"
+            android:layout_marginTop="25dp"
+            android:text="Email ID"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kkailasmantri@gmail.com"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_weight="1"
+            android:id="@+id/textValueEmail"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyMobile"
+            android:layout_marginTop="25dp"
+            android:text="Mobile Number"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9579422570"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textValueMobile"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyDate"
+            android:layout_marginTop="25dp"
+            android:text="Date of Birth"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17/11/1998"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textValueDate"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyAddress"
+            android:layout_marginTop="25dp"
+            android:text="Address"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:text="Savarkar chowk, Osmanabad"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textValueAddress"/>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textKeyGender"
+            android:layout_marginTop="25dp"
+            android:text="Gender"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textStyle="bold"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:text="Male"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:id="@+id/textValueGender"/>
+    </TableRow>
+
+</TableLayout>

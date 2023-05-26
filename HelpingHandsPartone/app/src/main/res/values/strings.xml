@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Helping Hands</string>
+
+    <string name="donate_amount">Enter Amount To Donate</string>
+    <string name="no_notifications">No Notifications Available Yet</string>
+    <string name="amount_donated">Amount Donated : </string>
+    <string name="total_donations">Total Donations : </string>
+    <string name="last_donated_on">Last Donated On :</string>
+    <string name="payments">Payments</string>
+    <string name="go_back">Go Back</string>
+    <string name="no_payments_yet">No payments done by any user yet</string>
+    <string name="theme_info">The System theme allows the application to change
+        the application theme according to the system selected theme.</string>
+    <string name="system_theme">System Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="light_theme">Light Theme</string>
+    <string name="theme">Theme</string>
+    <string name="theme_light">LIGHT_THEME_SELECTED</string>
+    <string name="theme_dark">DARK_THEME_SELECTED</string>
+    <string name="theme_system">SYSTEM_THEME_SELECTED</string>
+
+    <string name="Version_number">Version 1.0</string>
+    <string name="about_information">
+        Helping Hand is an Android based application which is used
+        for the online Charity Donations and to help people by contributing
+        your valuable time to those flourishing NGOs which is always ready for the
+        development of good fortune and successful social status of our Nation.
+    </string>
+    <string name="developed_by">Developed By:</string>
+    <string name="developer_name_for_whole_project">KASK Group</string>
+    <string name="allow_notification">ALLOW_NOTIFICATIONS</string>
+    <string name="notifications_settings">Notifications Settings</string>
+    <string name="block_app_notifications">Block App Notifications</string>
+    <string name="notification_info">Block App Notifications allows a user to block the notifications coming from the app to the phone\'s notification drawer.\n\nApplying this will stop showing the notification and the user may not get any notification regarding the application.</string>
+</resources>

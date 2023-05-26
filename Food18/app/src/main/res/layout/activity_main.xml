@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:id="@+id/image"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login"
+            android:padding="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:layout_marginTop="10dp"
+            android:id="@+id/loginmobile"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:hint="@string/Enter_mobile_number"
+            android:drawableLeft="@drawable/ic_phone"
+            android:drawablePadding="15dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:maxLength="10"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/loginmobile"
+            android:id="@+id/password"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+            android:paddingTop="20dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:hint="@string/Enter_password"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_Successful"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/corners"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white"
+            android:text="Login "
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/password"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/corners"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@android:color/white"
+            android:text="Sign-Up with Mobile Number"
+            android:layout_below="@+id/login_Successful"
+            android:layout_marginTop="35dp"
+            android:onClick="AlertDialoguebox"/>
+        </RelativeLayout>
+        </RelativeLayout>
+</ScrollView>

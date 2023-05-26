@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/custom_applied_CompanyPost"
+                android:text="@string/company_post_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/custom_applied_CompanyPost_Name"
+                android:layout_toEndOf="@id/custom_applied_CompanyPost" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/text_company_name"
+                android:id="@+id/custom_applied_CompanyName"
+                android:layout_below="@id/custom_applied_CompanyPost_Name"
+                android:layout_marginTop="7dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/custom_applied_CompanyName_text"
+                android:layout_toEndOf="@id/custom_applied_CompanyName"
+                android:layout_below="@id/custom_applied_CompanyPost_Name" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="@string/company_job_id"
+                android:id="@+id/custom_applied_CompanyJob_id"
+                android:layout_below="@id/custom_applied_CompanyName_text"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/custom_applied_CompanyJob_id_text"
+                android:layout_toEndOf="@id/custom_applied_CompanyJob_id"
+                android:layout_below="@id/custom_applied_CompanyName_text" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/custom_horizontal_line"
+                android:background="@color/black"
+                android:layout_below="@id/custom_applied_CompanyJob_id" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/custom_horizontal_line" >
+
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="3"
+                    android:progress="1"
+                    android:layout_weight="1"
+                    android:id="@+id/progress_horizontal"
+                    android:layout_gravity="center_vertical"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2/3"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/progress_horizontal_text"
+                    style="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

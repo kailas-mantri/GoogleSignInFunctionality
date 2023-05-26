@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "438027309085",
+    "firebase_url": "https://scrimainsertdata.firebaseio.com",
+    "project_id": "scrimainsertdata",
+    "storage_bucket": "scrimainsertdata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438027309085:android:6553e9dc1e8315b6ccb6f4",
+        "android_client_info": {
+          "package_name": "com.scrimatec.scrimainsertdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438027309085-q88901c7p7ant8n03itbp9qe7puipfce.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.scrimatec.scrimainsertdata",
+            "certificate_hash": "62fe4d9519be8b88fb466df048e04daf563d3101"
+          }
+        },
+        {
+          "client_id": "438027309085-obbdrs59eg5i8v5or0tqn14fleals7sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP50vZKsGDnEIYkUiA3bAbISN9vqwdxmo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438027309085-obbdrs59eg5i8v5or0tqn14fleals7sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

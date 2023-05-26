@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/menu_group"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"
+            android:icon="@drawable/ic_menu_home"
+            />
+
+        <item
+            android:id="@+id/menu_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_menu_profile"
+            />
+
+        <item
+            android:id="@+id/menu_tools"
+            android:title="Tools"
+            android:icon="@drawable/ic_menu_tools"
+            />
+
+        <item
+            android:id="@+id/menu_about"
+            android:title="About"
+            android:icon="@drawable/ic_menu_about"
+            />
+
+    </group>
+
+    <item android:title="Comunicate">
+        <menu>
+            <item
+                android:title="Share"
+                android:id="@+id/menu_share"
+                android:icon="@drawable/ic_menu_share"
+                />
+            <item
+                android:title="Send"
+                android:id="@+id/menu_send"
+                android:icon="@drawable/ic_menu_send"
+                />
+        </menu>
+    </item>
+
+</menu>

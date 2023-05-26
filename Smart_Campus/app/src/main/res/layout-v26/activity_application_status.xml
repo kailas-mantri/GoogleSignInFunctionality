@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ApplicationStatusActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="@color/blue"
+        android:theme="@style/Toolbar_Theme" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_back"
+                android:id="@+id/imageBack"
+                android:onClick="imageBack"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Status"
+                android:singleLine="true"
+                android:layout_marginStart="22dp"
+                android:id="@+id/toolbar_TextTitle"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/imageBack"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:src="@mipmap/ic_launcher"
+                android:elevation="10dp"
+                android:id="@+id/company_profile_image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:id="@+id/text_company_title"
+                android:text="@string/text_company_name"
+                android:layout_toEndOf="@+id/company_profile_image"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:text="@string/company_job_id"
+                android:layout_below="@id/text_company_title"
+                android:layout_toEndOf="@+id/company_profile_image"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/company_profile_image">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_post_title"
+                    android:id="@+id/company_status_post"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:justificationMode="inter_word"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/company_status_post_name"
+                    android:layout_below="@id/company_status_post" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_status_exp_title"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/company_status_exp"
+                    android:layout_below="@id/company_status_post_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/company_status_exp"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/company_status_exp_info" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/company_skills_title"
+                    android:id="@+id/company_status_skills"
+                    android:layout_below="@+id/company_status_exp_info"
+                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@+id/company_status_skills"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/company_status_skills_info" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/custom_horizontal_line"
+                    android:background="@color/black"
+                    android:layout_below="@id/company_status_skills_info" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Process Completed"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/process_completion_text"
+                    android:layout_below="@id/custom_horizontal_line"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/round_one_relative"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/process_completion_text" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_check"
+                        android:background="@drawable/border_circular_status"
+                        android:elevation="7dp"
+                        android:id="@+id/round_one" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/round_one_text"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/round_one"
+                        android:text="Round One"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/round_Two_relative"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/round_one_relative" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_check"
+                        android:background="@drawable/border_circular_status"
+                        android:elevation="7dp"
+                        android:id="@+id/round_Two" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/round_Two_text"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/round_Two"
+                        android:text="Round Two"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/round_Three_relative"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/round_Two_relative" >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_check"
+                        android:background="@drawable/border_circular_status"
+                        android:elevation="7dp"
+                        android:id="@+id/round_three" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/round_three_text"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/round_three"
+                        android:text="Round Three"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
