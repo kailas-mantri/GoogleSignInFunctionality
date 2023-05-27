@@ -1,4 +1,4 @@
-package com.example.figmasamples;
+package com.example.figmasamples.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -7,6 +7,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.figmasamples.R;
 import com.example.figmasamples.databinding.ActivitySplashBinding;
 import com.google.firebase.FirebaseApp;
 

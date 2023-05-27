@@ -4,8 +4,10 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/dialog_borders"
-    android:padding="17dp">
+    android:padding="17dp"
+    tools:context=".fragments.BottomSheetDialogFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:id="@+id/otp_block"
         android:layout_width="match_parent"
@@ -54,7 +56,8 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/SecondOTPeT"
@@ -66,7 +69,8 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/ThirdOTPeT"
@@ -78,7 +82,8 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor" />
 
         <EditText
             android:id="@+id/FourthOTPeT"
@@ -91,7 +96,8 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor"/>
 
         <EditText
             android:id="@+id/FifthOTPeT"
@@ -104,10 +110,11 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor" />
 
         <EditText
-            android:id="@+id/sixOTPeT"
+            android:id="@+id/SixthOTPeT"
             android:layout_width="0dp"
             android:layout_height="50sp"
             android:layout_marginStart="10dp"
@@ -117,7 +124,8 @@
             android:gravity="center"
             android:inputType="number"
             android:maxLength="1"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="LabelFor" />
 
     </LinearLayout>
 

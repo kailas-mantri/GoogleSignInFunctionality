@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_background"
     android:paddingHorizontal="16dp"
-    tools:context=".MainActivity">
+    tools:context=".activities.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -76,7 +76,7 @@
                     android:background="@color/white" />
 
                 <EditText
-                    android:id="@+id/cellNumber"
+                    android:id="@+id/number"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"

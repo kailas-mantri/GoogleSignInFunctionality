@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "847065233185",
+    "firebase_url": "https://figmasamples-default-rtdb.firebaseio.com",
     "project_id": "figmasamples",
     "storage_bucket": "figmasamples.appspot.com"
   },
@@ -14,7 +15,7 @@
       },
       "oauth_client": [
         {
-          "client_id": "847065233185-4s6jdr2dh7bbm1b2317i20h6jfrg3vjh.apps.googleusercontent.com",
+          "client_id": "847065233185-6ok5q3l4t3pvcatf8ulpaanum3p6pr80.apps.googleusercontent.com",
           "client_type": 3
         }
       ],

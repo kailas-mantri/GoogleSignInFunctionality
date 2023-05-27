@@ -14,4 +14,6 @@
     <string name="timer">00:59</string>
     <string name="resendOtp">Resend OTP</string>
     <string name="verifyOtp">Verify OTP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
