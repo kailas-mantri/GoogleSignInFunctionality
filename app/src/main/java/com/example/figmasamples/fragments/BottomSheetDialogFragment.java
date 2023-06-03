@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.figmasamples.databinding.FragmentBottomsheetBinding;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
@@ -39,10 +40,10 @@ public class BottomSheetDialogFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mAuth = FirebaseAuth.getInstance();
         if (getArguments() != null) {
             verificationId = getArguments().getString("verificationId");
         }
-        mAuth = FirebaseAuth.getInstance();
     }
 
     @Override
@@ -73,12 +74,12 @@ public class BottomSheetDialogFragment extends Fragment {
         currentEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-//                Why we needed?
+
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-//                Why we needed?
+
             }
 
             @Override
