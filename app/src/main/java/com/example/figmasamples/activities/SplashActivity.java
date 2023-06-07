@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.figmasamples.R;
 import com.example.figmasamples.databinding.ActivitySplashBinding;
-import com.google.firebase.FirebaseApp;
 
 import java.util.Objects;
 
@@ -22,8 +21,6 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        FirebaseApp.initializeApp(this);
 
         binding = ActivitySplashBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
