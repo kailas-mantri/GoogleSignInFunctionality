@@ -28,10 +28,11 @@ public class BottomSheetDialogFragment extends Fragment {
     }
 
     // TODO: Rename and change types and number of parameters
-    public static BottomSheetDialogFragment newInstance(String verificationId) {
+    public static BottomSheetDialogFragment newInstance(String verificationId, String phoneNumber) {
         BottomSheetDialogFragment fragment = new BottomSheetDialogFragment();
         Bundle args = new Bundle();
         args.putString("verificationId", verificationId);
+        args.putString("phone");
         fragment.setArguments(args);
         return fragment;
     }

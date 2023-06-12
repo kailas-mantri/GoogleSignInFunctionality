@@ -54,6 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginBottom="24sp"
+                android:gravity="start"
                 android:background="@drawable/registration_no_selector"
                 android:orientation="horizontal"
                 android:weightSum="1">
@@ -62,7 +63,6 @@
                     android:id="@+id/countryCode"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_weight="0.13"
                     android:padding="10sp"
                     android:text="@string/countryCode"
@@ -79,7 +79,6 @@
                     android:id="@+id/number"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
                     android:layout_weight="0.865"
                     android:background="@null"
                     android:hint="@string/cellNumber"
@@ -126,30 +125,29 @@
             <LinearLayout
                 android:id="@+id/googleSignUp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50sp"
                 android:layout_below="@id/otherT"
                 android:background="@drawable/button_borders"
-                android:gravity="center"
                 android:orientation="horizontal"
+                android:gravity="center"
+                android:padding="8dp"
                 android:weightSum="1">
 
                 <pl.droidsonroids.gif.GifImageView
                     android:id="@+id/googleSignImage"
                     android:layout_width="0dp"
-                    android:layout_height="40sp"
-                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:layout_weight="0.20"
+                    android:layout_weight="0.25"
+                    android:scaleType="fitCenter"
                     android:src="@drawable/google_logo" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.70"
-                    android:padding="13dp"
+                    android:layout_weight="0.75"
                     android:text="@string/googleSignIn"
-                    android:textAlignment="inherit"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                     android:textColor="#4285F4" />
 
             </LinearLayout>
